@@ -13,18 +13,22 @@ interface RightChoise {
 }
 
 export default function Portrait({ index }: Props) {
-  const { disabled, setDisabled, getSixEmployees } = useContext(EmployeesContext);
+  const { disabled, setDisabled, getSixEmployees, addAttempts, addCorrectAnswers } = useContext(EmployeesContext);
   const [showResult, setShowResult] = useState<RightChoise | null>(null);
   const timeoutControl = useRef<NodeJS.Timeout | undefined>();
 
   const handleOnClick = (isRightChoice: boolean) => {
     setShowResult({ isRightChoice });
     setDisabled(true);
+    addAttempts();
+    if (isRightChoice) {
+      addCorrectAnswers();
+    }
 
     timeoutControl.current = setTimeout(() => {
       setDisabled(false);
       getSixEmployees();
-    }, 3000);
+    }, 2000);
   }
 
   useEffect(() => {
