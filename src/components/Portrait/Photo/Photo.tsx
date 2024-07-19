@@ -1,6 +1,6 @@
 import { useContext, useEffect, useRef, useState } from 'react';
 import { Image } from './Photo.styles';
-import { EmployeesContext } from '../../../contexts/employeesContext';
+import { EmployeesContext } from 'contexts/employeesContext';
 import { PHOTO_WIDTH, PHOTO_HEIGHT } from '../ResultMask/ResultMask.styles';
 
 interface Props {

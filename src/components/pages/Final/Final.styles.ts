@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ButtonOriginal from '../../../components/Button';
+import ButtonOriginal from 'components/Button';
 
 export const Container = styled.div`
   display: flex;

@@ -1,9 +1,9 @@
-import homeBanner from '../../../images/home-banner.svg';
+import homeBanner from 'images/home-banner.svg';
 import { STEPS } from '../../../constants';
 import { Container, Logo } from './Home.styles';
-import Button from '../../../components/Button';
+import Button from 'components/Button';
 import { useContext } from 'react';
-import { EmployeesContext } from '../../../contexts/employeesContext';
+import { EmployeesContext } from 'contexts/employeesContext';
 
 interface Props {
   show: boolean;

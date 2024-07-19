@@ -1,6 +1,6 @@
 import { Container, Background, Icon } from './ResultMask.styles';
-import correctIcon from '../../../images/correct.svg';
-import errorIcon from '../../../images/error.svg';
+import correctIcon from 'images/correct.svg';
+import errorIcon from 'images/error.svg';
 
 interface Props {
   showResult: boolean;

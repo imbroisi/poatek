@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import nameGameImage from '../../images/name-game.svg';
+import nameGameImage from 'images/name-game.svg';
 
 export const NameGameImage = styled.img.attrs({
   src: nameGameImage,

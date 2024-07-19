@@ -6,8 +6,8 @@ import {
   Dispatch,
   SetStateAction
 } from 'react';
-import { Employee } from '../types/Employees.types';
-import useFetchGet from '../api/useFetchGet';
+import { Employee } from 'types/Employees.types';
+import useFetchGet from 'api/useFetchGet';
 
 const GAME_DATA_URL = 'https://namegame.willowtreeapps.com/api/v1.0/profiles';
 

@@ -1,6 +1,6 @@
-import Board from '../../components/pages/Board';
-import Home from '../../components/pages/Home';
-import Final from '../../components/pages/Final';
+import Board from 'components/pages/Board';
+import Home from 'components/pages/Home';
+import Final from 'components/pages/Final';
 import { useState } from 'react';
 import { STEPS } from '../../constants';
 

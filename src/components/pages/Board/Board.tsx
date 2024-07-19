@@ -1,11 +1,11 @@
-import EmployeesGroup from '../../../components/EmployeesGroup';
+import EmployeesGroup from 'components/EmployeesGroup';
 import { Container, Header, BackIcon, Main, Name } from './Board.styles';
-import backIcon from '../../../images/back-arrow.svg';
+import backIcon from 'images/back-arrow.svg';
 import { STEPS } from '../../../constants';
 import { useContext } from 'react';
-import { EmployeesContext } from '../../../contexts/employeesContext';
-import Button from '../../../components/Button';
-import NameGameImage from '../../../components/NameGameImage';
+import { EmployeesContext } from 'contexts/employeesContext';
+import Button from 'components/Button';
+import NameGameImage from 'components/NameGameImage';
 
 interface Props {
   show: boolean;
