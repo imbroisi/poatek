@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { EmployeesContext } from 'contexts/employeesContext';
 import { Bottom, Button, Congrats, Container, Top, Statistics, Item, Value } from './Final.styles';
-import { STEPS } from '../../../constants';
+import { STEPS } from 'constant';
 import NameGameImage from 'components/NameGameImage';
 
 interface Props {

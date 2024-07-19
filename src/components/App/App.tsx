@@ -2,7 +2,7 @@ import Board from 'components/pages/Board';
 import Home from 'components/pages/Home';
 import Final from 'components/pages/Final';
 import { useState } from 'react';
-import { STEPS } from '../../constants';
+import { STEPS } from 'constant';
 
 function App() {
   const [step, setStep] = useState<number>(STEPS.HOME)

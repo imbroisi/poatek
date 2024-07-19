@@ -1,5 +1,5 @@
 import homeBanner from 'images/home-banner.svg';
-import { STEPS } from '../../../constants';
+import { STEPS } from 'constant';
 import { Container, Logo } from './Home.styles';
 import Button from 'components/Button';
 import { useContext } from 'react';
