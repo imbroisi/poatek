@@ -11,9 +11,9 @@ export default function ResultMask({ showResult, isRightChoice }: Props) {
   const iconSrc = isRightChoice ? correctIcon : errorIcon;
 
   return (
-    <Container showResult={showResult}>
+    <Container showResult={showResult} data-testid="result-mask">
       <Background isRightChoice={isRightChoice} />
-      <Icon src={iconSrc} width="120" height="120" />
+      <Icon src={iconSrc} width="120" height="120" data-testid="result-icon" />
     </Container>
   );
 }

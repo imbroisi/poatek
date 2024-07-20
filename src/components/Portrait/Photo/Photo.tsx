@@ -29,7 +29,7 @@ export default function Photo({
     if (!employee) {
       return;
     }
-    const newImgsSrc = structuredClone(imgsSrc);
+    const newImgsSrc = [...imgsSrc];
 
     const src = employee.headshot.url;
 

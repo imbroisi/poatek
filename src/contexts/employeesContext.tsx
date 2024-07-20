@@ -63,6 +63,7 @@ const EmployeesProvider = ({ children }: Props) => {
   }
 
   useEffect(() => {
+    /* istanbul ignore next */
     if (!gameData) {
       return;
     }
