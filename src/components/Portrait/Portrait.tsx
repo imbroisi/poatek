@@ -1,7 +1,7 @@
 import { useContext, useEffect, useRef, useState } from 'react';
 import { Container } from './Portrait.styles';
-import Photo from './Photo';
-import ResultMask from './ResultMask';
+import Photo from '../Photo';
+import ResultMask from '../ResultMask';
 import { EmployeesContext } from 'contexts/employeesContext';
 
 interface Props {

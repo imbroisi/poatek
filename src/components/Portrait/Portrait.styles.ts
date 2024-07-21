@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { PHOTO_WIDTH, PHOTO_HEIGHT } from './ResultMask/ResultMask.styles';
+import { PHOTO_WIDTH, PHOTO_HEIGHT } from '../ResultMask/ResultMask.styles';
 
 export const Container = styled.div`
   position: relative;

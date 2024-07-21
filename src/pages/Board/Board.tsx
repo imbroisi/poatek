@@ -19,16 +19,21 @@ export default function Board ({ show, onChangeStep }: Props) {
   const name = `${correctEmployee?.firstName} ${correctEmployee?.lastName}`;
 
   return (
-    <Container show={show} data-testid="board-component">
+    <Container data-testid="board-component" show={show}>
       <Header>
-        <BackIcon src={backIcon} onClick={() => onChangeStep(STEPS.HOME)} />
+        <BackIcon src={backIcon} onClick={() => onChangeStep(STEPS.HOME)} title="Go Home" />
         <NameGameImage alt="The Name Game" title="Home" />
       </Header>
       <Main>
         <div>Try matching the WillowTree employee to their photo.</div>
         <Name>{name}</Name>
         <EmployeesGroup />
-        <Button disabled={attempts < 5} onClick={()=> onChangeStep(STEPS.FINAL)}>Continue</Button>
+        <Button
+          disabled={attempts < 5}
+          onClick={() => onChangeStep(STEPS.FINAL)}
+        >
+          Continue
+        </Button>
       </Main>
     </Container>
   );

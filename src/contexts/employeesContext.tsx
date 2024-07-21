@@ -3,25 +3,11 @@ import {
   useEffect,
   useRef,
   useState,
-  Dispatch,
-  SetStateAction
 } from 'react';
-import { Employee } from 'types/Employees.types';
+import { Employee, Context } from 'types/Employees.types';
 import useFetchGet from 'api/useFetchGet';
 
 const GAME_DATA_URL = 'https://namegame.willowtreeapps.com/api/v1.0/profiles';
-
-interface Context {
-  disabled: boolean;
-  setDisabled: Dispatch<SetStateAction<boolean>>;
-  employeersChosen: Employee[];
-  getSixEmployees: () => void;
-  attempts: number;
-  addAttempts: () => void;
-  correctAnswers: number;
-  addCorrectAnswers: () => void;
-  reset: () => void;
-}
 
 export const EmployeesContext = createContext<Context>({
   disabled: false,
@@ -83,7 +69,9 @@ const EmployeesProvider = ({ children }: Props) => {
     setDisabled(false);
   }
 
-  const addAttempts = () => setAttempts(attempts + 1);
+  const addAttempts = () => {
+    setAttempts(attempts + 1);
+  }
   const addCorrectAnswers = () => setCorrectAnswers(correctAnswers + 1);
 
   return (

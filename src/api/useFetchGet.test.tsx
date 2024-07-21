@@ -63,4 +63,3 @@ describe('useFetchGet', () => {
     expect(global.fetch).toHaveBeenCalledWith(url, { signal: expect.any(AbortSignal) });
   });
 });
-
